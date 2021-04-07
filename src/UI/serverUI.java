@@ -25,6 +25,15 @@ public class serverUI extends Application {
         primaryStage.show();
     }
 
+    public void addMsg(){
+        String message = clientUI.getMsg();
+        if(serverMessages.getText() != null){
+            serverMessages.appendText(message);
+        } else {
+            serverMessages.setText(message);
+        }
+    }
+
     public void handleServerExit(ActionEvent event) {
         System.exit(0);
     }

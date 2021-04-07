@@ -31,7 +31,10 @@ public class ClientHandler implements Runnable {
                     out.println("Bye.");
                     break;
                 }
+
+                //This line is output to the server window
                 System.out.println(line);
+                //This line is output to the client window
                 out.println(line);
             }
 

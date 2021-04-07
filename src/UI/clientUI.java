@@ -32,6 +32,7 @@ public class clientUI extends Application {
     //returns string of the form 'Username: message text'
     public String handleSendButton(ActionEvent event) {
         msg = (username.getText()+": "+message.getText());
+        message.clear();
         //System.out.println(msg);
         return msg;
     }
