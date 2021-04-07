@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="UI.serverUI"
+            prefHeight="400.0" prefWidth="400.0">
+    <TextArea id="serverMessages" fx:id="serverMessages"
+              AnchorPane.topAnchor="30" AnchorPane.bottomAnchor="60"
+              AnchorPane.leftAnchor="30" AnchorPane.rightAnchor="30"/>
+
+    <Button id="serverExit" text="Exit" onAction="#handleServerExit"
+            fx:id="serverExit"
+            AnchorPane.bottomAnchor="30" AnchorPane.leftAnchor="30"/>
+
+</AnchorPane>
